@@ -14,7 +14,6 @@ public class FileServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String data = request.getParameter("data");
-        String var = "";
         Utils.deleteFile(data);
     }
 }
